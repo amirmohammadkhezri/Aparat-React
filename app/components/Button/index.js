@@ -4,21 +4,21 @@
  *
  */
 
-import React, { memo } from 'react';
-// import PropTypes from 'prop-types';
-// import styled from 'styled-components';
+import { memo } from 'react';
+import styled from 'styled-components';
 
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+const StyledButton = styled.button`
+  border: 1px solid #222;
+  background-color: #fff;
+  margin: 5px;
 
-function Button() {
-  return (
-    <div>
-      <FormattedMessage {...messages.header} />
-    </div>
-  );
-}
+  &:hover {
+    background-color: #ccc;
+  }
 
-Button.propTypes = {};
+  span {
+    color: red;
+  }
+`;
 
-export default memo(Button);
+export default memo(StyledButton);
