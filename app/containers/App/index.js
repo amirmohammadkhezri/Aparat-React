@@ -6,7 +6,7 @@
  * contain code that should be seen on all pages. (e.g. navigation bar)
  *
  */
-
+// وارد کردن فایل های مورد نیاز برای این صفحه
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
